@@ -5,7 +5,7 @@ FROM amazoncorretto:17
 WORKDIR /app
 
 # Copy the Java source code to the container
-COPY HelloWorld.java .
+COPY src/main/java/com/example/HelloWorld.java .
 
 # Compile the Java program
 RUN javac HelloWorld.java
