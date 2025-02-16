@@ -5,10 +5,10 @@ FROM amazoncorretto:17
 WORKDIR /app
 
 # Copy the Java source code to the container
-COPY src/main/java/com/example/HelloWorld.java .
+COPY src/main/java/com/example/HelloWorld.java /app/.
 
 # Compile the Java program
-RUN javac HelloWorld.java
+RUN javac /app/HelloWorld.java
 
 # Command to run the Java application
 CMD ["java", "HelloWorld"]
